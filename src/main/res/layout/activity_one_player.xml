@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Demonstrates using a relative layout to create a form -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#9ad6fc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="630px"
+        android:layout_height="630px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="#07238b">
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_above="@+id/four"
+            android:layout_alignEnd="@+id/four"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignTop="@+id/one"
+            android:layout_centerHorizontal="true"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignTop="@+id/one"
+            android:layout_toEndOf="@+id/two"
+            android:padding="0px"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/two"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignStart="@+id/two"
+            android:layout_alignTop="@+id/four"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignStart="@+id/three"
+            android:layout_alignTop="@+id/four"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignStart="@+id/one"
+            android:layout_below="@+id/four"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignTop="@+id/seven"
+            android:layout_centerHorizontal="true"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignTop="@+id/seven"
+            android:layout_toEndOf="@+id/two"
+            android:text=" "
+            android:textColor="#000"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dialogue"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="76dp"
+        android:gravity="center"
+        android:text="Click a button to start"
+        android:textSize="20sp" />
+
+</RelativeLayout>

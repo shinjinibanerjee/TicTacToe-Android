@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ad6fc"
+    tools:context=".MainMenu">
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:textColor="#000"
+        android:text="One Player" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_centerInParent="true"
+        android:text="Two Players" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:layout_marginBottom="118dp"
+        android:text="About" />
+</RelativeLayout>
